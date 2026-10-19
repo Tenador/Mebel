@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Шпаргалка: Встреча с Михаилом (Мебель)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0b0d11;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 16px 16px 80px 16px;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 12px;
+    }
+    .card {
+      background: #141820;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .step-number {
+      background: #a35b42;
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .action {
+      background: rgba(16, 185, 129, 0.1);
+      border-left: 3px solid #10b981;
+      padding: 8px 10px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #6ee7b7;
+    }
+    .quote {
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 3px solid #f59e0b;
+      padding: 10px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13.5px;
+      color: #f1f5f9;
+      font-style: italic;
+      line-height: 1.45;
+    }
+    .price-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .price-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .price-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #f59e0b;
+    }
+    .price-lbl {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .objection {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .objection-q {
+      font-weight: 700;
+      color: #f87171;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .objection-a {
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(15, 20, 28, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-around;
+      padding: 8px;
+      z-index: 100;
+    }
+    .nav-btn {
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.05);
+    }
+    .nav-btn:active {
+      background: #a35b42;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">Шпаргалка для телефона</div>
+  <h1>Встреча с Михаилом (Мебель)</h1>
+  <div class="subtitle">15 000 ₽ + 5% с договоров • Демо на флешке</div>
+
+  <!-- ЦЕЛЬ ВСТРЕЧИ -->
+  <div class="card" style="border-color: rgba(245, 158, 11, 0.3);">
+    <div class="card-title" style="color: #fbbf24;">🎯 Главная цель</div>
+    <div style="font-size: 13.5px; color: #cbd5e1;">
+      Показать живую работу сайта на ноутбуке $\rightarrow$ вызвать ВАУ-эффект $\rightarrow$ зафиксировать <strong>15 000 ₽</strong> запуск + <strong>5%</strong> с договоров $\rightarrow$ взять его фото и прайс.
+    </div>
+  </div>
+
+  <!-- ШАГИ ПОКАЗА -->
+  <div id="steps" style="margin-top: 20px;">
+    <h2 style="font-size: 16px; color: white; margin-bottom: 10px;">🧭 Сценарий показа: 5 шагов</h2>
+
+    <!-- Шаг 1 -->
+    <div class="card">
+      <div class="card-title">
+        <span class="step-number">1</span> Hero: Веер материалов
+      </div>
+      <div class="action">👉 <strong>Наведите курсор</strong> на плашки материалов (01–06), покажите раскрытие.</div>
+      <div class="quote">
+        «Михаил, первое, что видит клиент — интерактивный веер материалов без перекупов и салонов. Клиент сразу видит уровень фабрики».
+      </div>
+    </div>
+
+    <!-- Шаг 2 -->
+    <div class="card">
+      <div class="card-title">
+        <span class="step-number">2</span> Слайдер 3D CAD ⟷ Кухня
+      </div>
+      <div class="action">👉 <strong>Потяните ползунок</strong> в центре (чертеж совпадает с кухней до 1 мм).</div>
+      <div class="quote">
+        «Люди боятся, что нарисуют одно, а соберут криво. Слайдер доказывает: мы работаем по инженерным чертежам с миллиметровой точностью».
+      </div>
+    </div>
+
+    <!-- Шаг 3 -->
+    <div class="card">
+      <div class="card-title">
+        <span class="step-number">3</span> Квиз-калькулятор
+      </div>
+      <div class="action">👉 Выберите <strong>Кухня</strong> $\rightarrow$ <strong>С островом</strong> (цена пересчитается). На шаге 3 введите имя <strong>Михаил</strong>.</div>
+      <div class="quote">
+        «Обычные формы дают 1% конверсии. Квиз вовлекает и дает 8–12%. Цены настроим ровно под ваш прайс-лист».
+      </div>
+    </div>
+
+    <!-- Шаг 4 -->
+    <div class="card">
+      <div class="card-title">
+        <span class="step-number">4</span> Пуш-заявка в Telegram
+      </div>
+      <div class="action">👉 Нажмите <strong>«Получить расчет»</strong> $\rightarrow$ звенит колокольчик Telegram, всплывает пуш.</div>
+      <div class="quote">
+        «За 2 секунды готовая смета падает вам в Telegram: что за мебель, размеры, бюджет и телефон клиента в WhatsApp».
+      </div>
+    </div>
+
+    <!-- Шаг 5 -->
+    <div class="card" style="border-color: rgba(16, 185, 129, 0.4);">
+      <div class="card-title" style="color: #34d399;">
+        <span class="step-number" style="background: #10b981;">5</span> Загрузка фото в 1 клик + Удаление
+      </div>
+      <div class="action">👉 Нажмите <strong>«Загрузить фото»</strong> (или демо) $\rightarrow$ фото появляется первым в каталоге! Затем покажите красную кнопку <strong>[Удалить]</strong>.</div>
+      <div class="quote">
+        «Вам не нужны программисты. Сфоткали с телефона — нажали кнопку, оно на сайте в WebP. Загрузили не то? Нажали [Удалить] — всё исчезло».
+      </div>
+    </div>
+  </div>
+
+  <!-- УСЛОВИЯ И ЦИФРЫ -->
+  <div id="pricing" class="card" style="margin-top: 10px;">
+    <div class="card-title" style="color: #f59e0b;">💰 Условия и Цены</div>
+    <div class="price-grid">
+      <div class="price-box">
+        <div class="price-val">15 000 ₽</div>
+        <div class="price-lbl">Разработка под ключ</div>
+      </div>
+      <div class="price-box">
+        <div class="price-val">5%</div>
+        <div class="price-lbl">С закрытых договоров</div>
+      </div>
+      <div class="price-box">
+        <div class="price-val">~300 ₽</div>
+        <div class="price-lbl">Домен (.ru) в год</div>
+      </div>
+      <div class="price-box">
+        <div class="price-val">~500 ₽</div>
+        <div class="price-lbl">Сервер в месяц</div>
+      </div>
+    </div>
+    <div class="quote" style="margin-top: 10px;">
+      «Сайт окупается с одной первой кухни (средний чек 150 000+ ₽). А 5% гарантируют, что я лично заинтересован в ваших продажах».
+    </div>
+  </div>
+
+  <!-- ВОЗРАЖЕНИЯ -->
+  <div id="faq" class="card" style="margin-top: 10px;">
+    <div class="card-title" style="color: #f87171;">🛡️ Отработка возражений</div>
+
+    <div class="objection">
+      <div class="objection-q">❓ «У меня другие цены в прайсе»</div>
+      <div class="objection-a">«Конечно! Мы сядем на 20 минут, вы дадите свои коэффициенты за метр, и квиз будет считать по вашим ценам».</div>
+    </div>
+
+    <div class="objection">
+      <div class="objection-q">❓ «У меня нет времени вести сайт»</div>
+      <div class="objection-a">«Поэтому сделана загрузка в 1 клик с телефона без паролей и админок. А заявки сразу идут в ваш Telegram».</div>
+    </div>
+
+    <div class="objection" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+      <div class="objection-q">❓ «А если заявок не будет?»</div>
+      <div class="objection-a">«Квиз дает 8-12% конверсии. И главное: я беру 5% только с заключенных сделок, поэтому я финансово в одной лодке с вами».</div>
+    </div>
+  </div>
+
+  <!-- ЧЕК-ЛИСТ -->
+  <div class="card" style="margin-top: 10px; background: rgba(56, 189, 248, 0.05); border-color: rgba(56, 189, 248, 0.2);">
+    <div class="card-title" style="color: #38bdf8;">🎒 Чек-лист</div>
+    <div style="font-size: 13px; color: #cbd5e1; line-height: 1.6;">
+      ✅ Флешка с файлами (папка ФЛЕШКА_МЕБЕЛЬ_ДЕМО)<br>
+      ✅ Проверено: сайт работает 100% без интернета<br>
+      ✅ Ноутбук и телефон заряжены<br>
+      ✅ Блокнот и ручка для фиксации правок Михаила
+    </div>
+  </div>
+
+  <!-- НАВИГАЦИОННАЯ ПАНЕЛЬ СНИЗУ -->
+  <div class="nav-bar">
+    <a href="#steps" class="nav-btn">🧭 Сценарий</a>
+    <a href="#pricing" class="nav-btn">💰 Цены (15к + 5%)</a>
+    <a href="#faq" class="nav-btn">🛡️ Возражения</a>
+  </div>
+
+</body>
+</html>

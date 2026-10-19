@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="100%" height="100%">
+  <defs>
+    <!-- Blueprint Grid Pattern -->
+    <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#132c4e" stroke-width="0.75" />
+    </pattern>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#smallGrid)" />
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#1d4474" stroke-width="1.5" />
+    </pattern>
+    <!-- Arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#38bdf8" />
+    </marker>
+    <!-- Tick marker -->
+    <marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <line x1="2" y1="8" x2="8" y2="2" stroke="#38bdf8" stroke-width="2" />
+    </marker>
+  </defs>
+
+  <!-- Background Blueprint Paper -->
+  <rect width="1400" height="900" fill="#081426" />
+  <rect width="1400" height="900" fill="url(#grid)" />
+
+  <!-- Outer Architectural Border -->
+  <rect x="25" y="25" width="1350" height="850" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.6" />
+  <rect x="30" y="30" width="1340" height="840" fill="none" stroke="#1d4474" stroke-width="1" />
+
+  <!-- Technical Coordinate Ticks -->
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.4" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#38bdf8">
+    <text x="60" y="20">0,0</text>
+    <text x="350" y="20">X: 1000</text>
+    <text x="700" y="20">X: 2000</text>
+    <text x="1050" y="20">X: 3000</text>
+    <text x="1330" y="20">X: 3800</text>
+    <text x="8" y="250">Y: 750</text>
+    <text x="8" y="550">Y: 1650</text>
+    <text x="8" y="800">Y: 2400</text>
+  </g>
+
+  <!-- Watermark -->
+  <text x="700" y="90" text-anchor="middle" fill="#38bdf8" fill-opacity="0.12" font-family="'JetBrains Mono', monospace" font-size="32" font-weight="900" letter-spacing="8">
+    3D CAD WIREFRAME • ЧПУ ПРИСАДКА И РАСПИЛ
+  </text>
+
+  <!-- ================= MATCHING KITCHEN LAYOUT ================= -->
+  
+  <!-- 1. TALL PANTRY / REFRIGERATOR COLUMN ON THE LEFT (Matching photo left side) -->
+  <g id="tall-column-left">
+    <!-- Tall cabinet frame -->
+    <rect x="70" y="100" width="220" height="730" fill="#0b2240" fill-opacity="0.7" stroke="#e0f2fe" stroke-width="2.5" />
+    <!-- Upper horizontal section line -->
+    <line x1="70" y1="260" x2="290" y2="260" stroke="#38bdf8" stroke-width="2" />
+    <line x1="70" y1="420" x2="290" y2="420" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="70" y1="580" x2="290" y2="580" stroke="#38bdf8" stroke-width="1.5" />
+    <!-- Horizontal shiplap groove lines matching the photo -->
+    <line x1="70" y1="140" x2="290" y2="140" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="180" x2="290" y2="180" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="220" x2="290" y2="220" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="300" x2="290" y2="300" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="340" x2="290" y2="340" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="380" x2="290" y2="380" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="620" x2="290" y2="620" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="660" x2="290" y2="660" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="700" x2="290" y2="700" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <line x1="70" y1="740" x2="290" y2="740" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+    <!-- Brass long bar handle wireframe -->
+    <rect x="270" y="440" width="8" height="120" rx="3" fill="#f59e0b" stroke="#fef08a" stroke-width="1.5" />
+    <rect x="270" y="690" width="8" height="60" rx="3" fill="#f59e0b" stroke="#fef08a" stroke-width="1.5" />
+    <text x="80" y="125" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">ВСТРОЕННЫЙ ХОЛОДИЛЬНИК</text>
+  </g>
+
+  <!-- 2. CENTER BACKGROUND COOKING ZONE (Stove, Marble Apron & Range Hood) -->
+  <g id="center-cooking-wall">
+    <!-- Marble Backsplash Wall Area -->
+    <rect x="290" y="240" width="460" height="340" fill="#091b33" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5" />
+    
+    <!-- Large Architectural Range Hood Canopy (Matching the wood band and metallic hood in photo) -->
+    <rect x="290" y="100" width="460" height="230" fill="#0d2545" fill-opacity="0.8" stroke="#e0f2fe" stroke-width="2.5" />
+    <!-- Wood lower trim of hood -->
+    <rect x="290" y="290" width="460" height="40" fill="#f59e0b" fill-opacity="0.3" stroke="#f59e0b" stroke-width="2" />
+    <text x="520" y="315" text-anchor="middle" fill="#fef08a" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ВЫТЯЖНОЙ КУПОЛ • МАССИВ ДУБА</text>
+
+    <!-- Shiplap paneling above hood -->
+    <line x1="290" y1="130" x2="750" y2="130" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+    <line x1="290" y1="160" x2="750" y2="160" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+    <line x1="290" y1="190" x2="750" y2="190" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+    <line x1="290" y1="220" x2="750" y2="220" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+    <line x1="290" y1="250" x2="750" y2="250" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+
+    <!-- Two Wall Sconces (Left & Right of cooktop) -->
+    <circle cx="330" cy="480" r="14" fill="#f59e0b" fill-opacity="0.3" stroke="#fef08a" stroke-width="1.5" />
+    <path d="M 320 480 Q 300 480 300 450" fill="none" stroke="#f59e0b" stroke-width="2" />
+    <circle cx="700" cy="480" r="14" fill="#f59e0b" fill-opacity="0.3" stroke="#fef08a" stroke-width="1.5" />
+    <path d="M 710 480 Q 730 480 730 450" fill="none" stroke="#f59e0b" stroke-width="2" />
+
+    <!-- Stainless Pro Gas Range / Cooktop with Controls (Matching photo) -->
+    <rect x="420" y="560" width="240" height="150" fill="#0a1d37" stroke="#e0f2fe" stroke-width="2.5" />
+    <rect x="420" y="560" width="240" height="30" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5" />
+    <!-- Control knobs -->
+    <circle cx="450" cy="575" r="7" fill="none" stroke="#e0f2fe" stroke-width="1.5" />
+    <circle cx="485" cy="575" r="7" fill="none" stroke="#e0f2fe" stroke-width="1.5" />
+    <circle cx="520" cy="575" r="7" fill="none" stroke="#e0f2fe" stroke-width="1.5" />
+    <circle cx="560" cy="575" r="7" fill="none" stroke="#e0f2fe" stroke-width="1.5" />
+    <circle cx="595" cy="575" r="7" fill="none" stroke="#e0f2fe" stroke-width="1.5" />
+    <circle cx="630" cy="575" r="7" fill="none" stroke="#e0f2fe" stroke-width="1.5" />
+    <!-- Oven handle -->
+    <line x1="450" y1="605" x2="630" y2="605" stroke="#e0f2fe" stroke-width="3" />
+    <rect x="450" y="620" width="180" height="80" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3,3" />
+
+    <!-- Left & Right Base Drawer Modules adjacent to stove -->
+    <rect x="290" y="580" width="130" height="150" fill="#0b2240" stroke="#e0f2fe" stroke-width="2" />
+    <line x1="290" y1="630" x2="420" y2="630" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="290" y1="680" x2="420" y2="680" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="330" y1="605" x2="380" y2="605" stroke="#f59e0b" stroke-width="2" />
+    <line x1="330" y1="655" x2="380" y2="655" stroke="#f59e0b" stroke-width="2" />
+    <line x1="330" y1="705" x2="380" y2="705" stroke="#f59e0b" stroke-width="2" />
+
+    <rect x="660" y="580" width="90" height="150" fill="#0b2240" stroke="#e0f2fe" stroke-width="2" />
+    <line x1="660" y1="630" x2="750" y2="630" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="660" y1="680" x2="750" y2="680" stroke="#38bdf8" stroke-width="1.5" />
+  </g>
+
+  <!-- 3. RIGHT SIDE: TALL COLUMN & GLASS DISPLAY CABINETRY (Matching photo right side) -->
+  <g id="right-side-units">
+    <!-- Central Divider Column with door -->
+    <rect x="750" y="100" width="150" height="630" fill="#0b2240" fill-opacity="0.6" stroke="#e0f2fe" stroke-width="2.5" />
+    <rect x="750" y="320" width="150" height="260" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <rect x="770" y="590" width="110" height="60" fill="#081426" stroke="#38bdf8" stroke-width="1" />
+    <text x="825" y="625" text-anchor="middle" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">СВЧ/ДУХОВКА</text>
+
+    <!-- Glass Display Upper Cabinet (Far right matching photo) -->
+    <rect x="1100" y="180" width="220" height="300" fill="#07192f" stroke="#e0f2fe" stroke-width="2.5" />
+    <!-- Glass Shelves wireframe -->
+    <line x1="1100" y1="240" x2="1320" y2="240" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2" />
+    <line x1="1100" y1="300" x2="1320" y2="300" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2" />
+    <line x1="1100" y1="360" x2="1320" y2="360" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2" />
+    <line x1="1100" y1="420" x2="1320" y2="420" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2" />
+    <text x="1210" y="210" text-anchor="middle" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">ВИТРИНА С ПОДСВЕТКОЙ</text>
+
+    <!-- Right Base Cabinet & Wine Cooler under display -->
+    <rect x="1100" y="570" width="220" height="160" fill="#0b2240" stroke="#e0f2fe" stroke-width="2.5" />
+    <rect x="1230" y="600" width="80" height="120" fill="#081426" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="1270" y="665" text-anchor="middle" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">ВИННЫЙ ШКАФ</text>
+  </g>
+
+  <!-- 4. FOREGROUND: LARGE KITCHEN ISLAND (Matching the island in photo exactly!) -->
+  <g id="kitchen-island-foreground">
+    <!-- Island Base Cabinet Box -->
+    <rect x="390" y="640" width="830" height="190" fill="#091f3a" fill-opacity="0.9" stroke="#e0f2fe" stroke-width="3" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.6))" />
+    
+    <!-- Quartz Island Countertop (20mm Thick with chamfer) -->
+    <rect x="380" y="620" width="850" height="26" rx="3" fill="#38bdf8" fill-opacity="0.25" stroke="#f8fafc" stroke-width="3" />
+    <text x="805" y="638" text-anchor="middle" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">СТОЛЕШНИЦА ОСТРОВА: КВАРЦЕВЫЙ АГЛОМЕРАТ 20 ММ</text>
+
+    <!-- Undermount Ceramic Sink on the Island (Center-Left of island matching photo) -->
+    <rect x="670" y="646" width="130" height="24" rx="4" fill="none" stroke="#e0f2fe" stroke-width="2" />
+    <!-- Curved Gooseneck Faucet wireframe -->
+    <path d="M 860 646 L 860 540 C 860 515 825 515 825 540" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)" />
+    <circle cx="860" cy="646" r="6" fill="#f59e0b" stroke="#fef08a" stroke-width="1" />
+    <text x="880" y="535" fill="#fef08a" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">СМЕСИТЕЛЬ С ВЫДВИЖНЫМ ИЗЛИВОМ</text>
+
+    <!-- Bar Stool positions on the right of island -->
+    <ellipse cx="940" cy="800" rx="42" ry="16" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2" />
+    <ellipse cx="1090" cy="800" rx="42" ry="16" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,2" />
+    <text x="1015" y="805" text-anchor="middle" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">ПОЛУБАРНЫЕ СТУЛЬЯ</text>
+  </g>
+
+  <!-- ================= CAD DIMENSION LINES (MILLIMETERS) ================= -->
+  <!-- VERTICAL DIMENSION CHAIN (LEFT) -->
+  <g stroke="#38bdf8" stroke-width="1.2" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8">
+    <line x1="45" y1="100" x2="45" y2="830" stroke="#f59e0b" stroke-width="1.5" marker-start="url(#arrow-start)" marker-end="url(#arrow)" />
+    <line x1="35" y1="100" x2="70" y2="100" stroke="#f59e0b" stroke-width="1" opacity="0.5" />
+    <line x1="35" y1="830" x2="70" y2="830" stroke="#f59e0b" stroke-width="1" opacity="0.5" />
+    <text x="40" y="470" text-anchor="end" fill="#f59e0b" font-weight="bold" font-size="13">H = 2650 мм</text>
+  </g>
+
+  <!-- HORIZONTAL DIMENSION CHAIN (BOTTOM) -->
+  <g stroke="#38bdf8" stroke-width="1.2" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8">
+    <!-- Total width -->
+    <line x1="70" y1="860" x2="1320" y2="860" stroke="#f59e0b" stroke-width="1.5" marker-start="url(#arrow-start)" marker-end="url(#arrow)" />
+    <line x1="70" y1="830" x2="70" y2="870" stroke="#f59e0b" stroke-width="1" opacity="0.5" />
+    <line x1="1320" y1="730" x2="1320" y2="870" stroke="#f59e0b" stroke-width="1" opacity="0.5" />
+    <text x="700" y="880" text-anchor="middle" fill="#f59e0b" font-weight="bold" font-size="13">L = 4200 мм (ПО ЧЕРТЕЖУ В КВАРТИРУ)</text>
+  </g>
+
+  <!-- ================= TECHNICAL CALLOUT ANNOTATIONS ================= -->
+  <!-- Callout: Facades -->
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#e0f2fe">
+    <polyline points="290,170 330,140 430,140" fill="none" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#tick)" />
+    <text x="435" y="135" fill="#38bdf8" font-weight="bold">ФАСАДЫ: ЭМАЛЬ МАТОВАЯ</text>
+    <text x="435" y="150" fill="#94a3b8" font-size="9">ФРЕЗЕРОВКА ШЕЙКЕР • RAL 9003</text>
+  </g>
+
+  <!-- Callout: Blum Legrabox -->
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#e0f2fe">
+    <polyline points="500,720 540,760 620,760" fill="none" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#tick)" />
+    <text x="625" y="755" fill="#f59e0b" font-weight="bold">ФУРНИТУРА: BLUM LEGRABOX</text>
+    <text x="625" y="770" fill="#94a3b8" font-size="9">С ДОВОДЧИКАМИ И ЭЛЕКТРОПРИВОДОМ</text>
+  </g>
+
+  <!-- ================= ENGINEERING TITLE BLOCK (STAMP) ================= -->
+  <g id="title-block" transform="translate(1010, 690)">
+    <rect x="0" y="0" width="340" height="145" fill="#040c18" stroke="#38bdf8" stroke-width="2" />
+    <line x1="0" y1="35" x2="340" y2="35" stroke="#1d4474" stroke-width="1.5" />
+    <line x1="0" y1="75" x2="340" y2="75" stroke="#1d4474" stroke-width="1.5" />
+    <line x1="0" y1="110" x2="340" y2="110" stroke="#1d4474" stroke-width="1.5" />
+    <line x1="160" y1="75" x2="160" y2="145" stroke="#1d4474" stroke-width="1.5" />
+
+    <text x="15" y="24" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" letter-spacing="1">РАБОЧИЙ ПРОЕКТ (АР/КМ)</text>
+    <text x="15" y="52" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">ОБЪЕКТ: КУХНЯ С ОСТРОВОМ L=4200</text>
+    <text x="15" y="66" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">РАСКРОЙ И ЧПУ-ПРИСАДКА</text>
+
+    <text x="15" y="93" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">МАСШТАБ: 1:20</text>
+    <text x="15" y="104" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold">ТОЧНОСТЬ: ± 0.5 ММ</text>
+
+    <text x="175" y="93" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">СТАДИЯ:</text>
+    <text x="225" y="93" fill="#e0f2fe" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold">В ПРОИЗВОДСТВО</text>
+
+    <text x="15" y="128" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">КОНТРОЛЬ ОТК:</text>
+    <text x="15" y="140" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold">ПРИНЯТО (100% СОВПАДЕНИЕ)</text>
+
+    <text x="175" y="128" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="9">ЛИСТ: 01 / 06</text>
+    <text x="175" y="140" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">ФОРМАТ: CAD/DWG</text>
+  </g>
+</svg>

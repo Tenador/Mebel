@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Коммерческое предложение — Сайт мебели на заказ</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 12mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.35;
+      font-size: 11.5px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 3px;
+    }
+    .meta-box {
+      text-align: right;
+      font-size: 12px;
+      color: #475569;
+    }
+    .meta-box strong {
+      color: #0f172a;
+    }
+
+    /* Summary Card */
+    .summary-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #0284c7;
+      padding: 7px 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      font-size: 11.5px;
+      color: #334155;
+    }
+
+    h2 {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section {
+      margin-bottom: 12px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+      font-size: 11px;
+    }
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      text-align: left;
+      padding: 6px 8px;
+      font-weight: 700;
+      border-top: 1px solid #cbd5e1;
+      border-bottom: 1px solid #cbd5e1;
+    }
+    td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+    .price-col {
+      text-align: right;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .total-row td {
+      background: #f8fafc !important;
+      font-weight: 800;
+      font-size: 12px;
+      color: #0f172a;
+      border-top: 2px solid #0f172a;
+      border-bottom: 2px solid #0f172a;
+    }
+
+    /* Grid layout */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .info-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 9px 11px;
+    }
+    .info-card.accent {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+    .info-card h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    /* Feature lists */
+    .feature-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 14px;
+      margin-top: 6px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .check-icon {
+      color: #16a34a;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    /* Math example box */
+    .calc-box {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #78350f;
+    }
+    .calc-box strong {
+      color: #b45309;
+    }
+
+    /* Steps */
+    .steps {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .step-item {
+      flex: 1;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 11.5px;
+    }
+    .step-num {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #0f172a;
+      color: #ffffff;
+      text-align: center;
+      line-height: 20px;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .step-title {
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <span class="badge">Коммерческое предложение</span>
+      <h1 class="title">Разработка продающего сайта-каталога мебели</h1>
+      <div class="subtitle">Индивидуальное производство • Портфолио • Партнерская модель запуска</div>
+    </div>
+    <div class="meta-box">
+      <div><strong>Дата:</strong> 13 октября 2026 г.</div>
+      <div><strong>Срок действия:</strong> 30 дней</div>
+      <div><strong>Формат:</strong> Фикс + % от продаж</div>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary-card">
+    <strong>Цель проекта:</strong> Создать современный, быстрый сайт для демонстрации выполненных проектов мебели на заказ, генерации горячих входящих заявок и автоматической доставки лидов заказчику в Telegram. Сайт оптимизирован под удобное самостоятельное наполнение каталога в 1 клик.
+  </div>
+
+  <!-- SECTION 1: FINANCIAL TERMS -->
+  <div class="section">
+    <h2>1. Финансовая модель: Расчет стоимости</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Статья расходов</th>
+          <th>Что входит / Описание</th>
+          <th>Периодичность</th>
+          <th class="price-col">Сумма</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Разработка сайта под ключ</strong></td>
+          <td>Дизайн, адаптивная верстка, квиз-калькулятор, интеграция с Telegram, модуль загрузки фото</td>
+          <td>Разово (сейчас)</td>
+          <td class="price-col">15 000 ₽</td>
+        </tr>
+        <tr>
+          <td><strong>Доменное имя (.ru)</strong></td>
+          <td>Официальная регистрация адреса сайта на 1 год</td>
+          <td>1 раз в год</td>
+          <td class="price-col">~300 ₽</td>
+        </tr>
+        <tr>
+          <td><strong>Облачный VPS-сервер</strong></td>
+          <td>Аренда быстрого защищенного сервера под базу данных и сайт (1-й месяц)</td>
+          <td>Ежемесячно</td>
+          <td class="price-col">~500 ₽</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3">ИТОГО К ОПЛАТЕ НА СТАРТЕ:</td>
+          <td class="price-col">~15 800 ₽</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 2: FUTURE COSTS & PARTNERSHIP -->
+  <div class="section">
+    <h2>2. Оплата в дальнейшем: Партнерская модель (Win-Win)</h2>
+    
+    <div class="grid-2">
+      <div class="info-card">
+        <h3>Обязательные расходы на инфраструктуру</h3>
+        <p style="font-size: 12px; color: #475569; margin-bottom: 6px;">Оплачиваются напрямую хостинг-провайдеру по себестоимости:</p>
+        <ul style="padding-left: 16px; font-size: 12px; color: #334155;">
+          <li><strong>Сервер (хостинг):</strong> ~500 – 700 ₽ / месяц</li>
+          <li><strong>Продление домена:</strong> ~400 – 600 ₽ / 1 раз в год</li>
+          <li><strong>SSL-сертификат безопасности:</strong> 0 ₽ (бесплатно, автопродление)</li>
+        </ul>
+      </div>
+
+      <div class="info-card accent">
+        <h3 style="color: #15803d;">Вознаграждение за результат (Комиссия)</h3>
+        <p style="font-size: 12px; color: #166534; margin-bottom: 6px;">
+          <strong>5% от суммы договора</strong>, заключенного с заявки через сайт.
+        </p>
+        <p style="font-size: 11.5px; color: #15803d; line-height: 1.35;">
+          • Нет скрытых абонентских плат за воздух.<br>
+          • Если в какой-то месяц заказов с сайта нет — комиссия <strong>0 ₽</strong>.<br>
+          • Полная прозрачность: все заявки фиксируются в Telegram.
+        </p>
+      </div>
+    </div>
+
+    <div class="calc-box">
+      <strong>Пример прозрачного расчета комиссии:</strong>
+      С сайта поступила заявка $\rightarrow$ вы заключили договор на изготовление кухни на <strong>200 000 ₽</strong> $\rightarrow$ комиссия разработчику: <strong>10 000 ₽</strong> (5%). Вы зарабатываете чистую прибыль, разработчик получает справедливую оплату за результат.
+    </div>
+  </div>
+
+  <!-- SECTION 3: WHAT'S INCLUDED -->
+  <div class="section">
+    <h2>3. Что входит в сайт (Функционал и преимущества)</h2>
+    <ul class="feature-list">
+      <li class="feature-item">
+        <span class="check-icon">✓</span>
+        <div><strong>Интерактивный главный экран:</strong> Раскрывающийся аккордеон направлений (кухни, шкафы, офисы) в современном стиле.</div>
+      </li>
+      <li class="feature-item">
+        <span class="check-icon">✓</span>
+        <div><strong>Загрузка фото «в 1 клик»:</strong> Перетаскивание пачки фото с авто-сжатием в WebP (сайт всегда открывается моментально).</div>
+      </li>
+      <li class="feature-item">
+        <span class="check-icon">✓</span>
+        <div><strong>Интерактивный Квиз:</strong> Пошаговый калькулятор подбора мебели (повышает число заявок в 2–3 раза).</div>
+      </li>
+      <li class="feature-item">
+        <span class="check-icon">✓</span>
+        <div><strong>Мгновенные заявки в Telegram:</strong> Контакты клиентов и ответы из квиза сразу приходят вам в личные сообщения или чат.</div>
+      </li>
+      <li class="feature-item">
+        <span class="check-icon">✓</span>
+        <div><strong>Каталог работ с фильтрами:</strong> Удобная сортировка по комнатам и стилям с кнопкой «Рассчитать похожий».</div>
+      </li>
+      <li class="feature-item">
+        <span class="check-icon">✓</span>
+        <div><strong>100% адаптивность под смартфоны:</strong> Идеальное отображение на iPhone и Android (где находится 80% клиентов).</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTION 4: LAUNCH STEPS -->
+  <div class="section">
+    <h2>4. Этапы и сроки запуска</h2>
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-title">Интерактивное демо</div>
+        <div>Показ 1 страницы с примерным видом и логикой (2–3 дня).</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-title">Сборка и квиз</div>
+        <div>Верстка каталога, подключение админки для фото и опросника (4–5 дней).</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-title">Сервер и Telegram</div>
+        <div>Подключение домена, SSL, настройка бота заявок (1–2 дня).</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-title">Старт и тест</div>
+        <div>Загрузка первых фото клиентом и передача в работу (1 день).</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>Разработка и сопровождение веб-проектов</div>
+    <div>Коммерческое предложение действительно при согласовании условий</div>
+  </div>
+
+</body>
+</html>

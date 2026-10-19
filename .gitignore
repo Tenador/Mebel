@@ -1,0 +1,15 @@
+# dependencies & build
+node_modules/
+.vercel
+dist/
+build/
+
+# temporary dumps & test previews
+preview_*.png
+unsplash_dump.html
+*.log
+__pycache__/
+
+# system
+.DS_Store
+Thumbs.db
