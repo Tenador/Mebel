@@ -218,16 +218,15 @@
       </a>
 
       <!-- Desktop Nav with Smooth Section Switching -->
-      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
-        <a href="#catalog" class="hover:text-brand-500 transition">Каталог</a>
-        <a href="#portfolio" class="hover:text-amber-400 transition flex items-center gap-1 font-semibold text-slate-200">
-          <i data-lucide="gem" class="w-3.5 h-3.5 text-amber-400"></i> Портфолио с ценами
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#portfolio" class="hover:text-amber-400 transition flex items-center gap-1.5 font-bold text-white">
+          <i data-lucide="gem" class="w-3.5 h-3.5 text-amber-400"></i> Портфолио работ
         </a>
         <a href="#production" class="hover:text-brand-500 transition">Производство</a>
         <a href="#reviews" class="hover:text-brand-500 transition flex items-center gap-1">
           <i data-lucide="star" class="w-3.5 h-3.5 text-amber-400"></i> Отзывы
         </a>
-        <a href="#contacts" class="hover:text-brand-500 transition">Контакты и карта</a>
+        <a href="#contacts" class="hover:text-brand-500 transition">Контакты и цех</a>
       </nav>
 
       <!-- Primary Action Buttons (MAX + Call) -->
@@ -265,13 +264,13 @@
         </p>
 
         <div class="flex flex-wrap items-center justify-center gap-4">
-          <a href="#catalog" class="bg-brand-600 hover:bg-brand-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-xl shadow-brand-600/30 transition flex items-center gap-2 text-sm">
-            <i data-lucide="layout-grid" class="w-4 h-4"></i>
-            Каталог решений
+          <a href="#portfolio" class="bg-amber-400 hover:bg-amber-300 text-dark-950 font-bold px-7 py-3.5 rounded-xl shadow-xl shadow-amber-400/20 transition flex items-center gap-2 text-sm">
+            <i data-lucide="gem" class="w-4 h-4 text-dark-950"></i>
+            Смотреть портфолио работ
           </a>
-          <a href="#portfolio" class="bg-white/10 hover:bg-white/15 border border-white/10 text-white font-semibold px-6 py-3.5 rounded-xl transition flex items-center gap-2 text-sm">
-            <i data-lucide="gem" class="w-4 h-4 text-amber-400"></i>
-            Портфолио с ценами
+          <a href="https://max.ru" target="_blank" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-xl shadow-blue-600/30 transition flex items-center gap-2 text-sm">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            Написать Михаилу в MAX
           </a>
         </div>
       </div>
@@ -335,8 +334,8 @@
                   <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
                     <i data-lucide="check" class="w-3.5 h-3.5"></i> Монтаж по Краснодару
                   </div>
-                  <button onclick="goToCatalogCategory('kitchen')" class="bg-gradient-to-r from-brand-600 to-amber-600 hover:from-brand-500 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
-                    Смотреть в каталоге <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  <button onclick="goToPortfolioCategory('kitchen')" class="bg-gradient-to-r from-brand-600 to-amber-600 hover:from-brand-500 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
+                    Смотреть в портфолио <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
               </div>
@@ -381,8 +380,8 @@
                   <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
                     <i data-lucide="check" class="w-3.5 h-3.5"></i> Доставка по краю
                   </div>
-                  <button onclick="goToCatalogCategory('business')" class="bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
-                    Смотреть в каталоге <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  <button onclick="goToPortfolioCategory('business')" class="bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
+                    Смотреть в портфолио <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
               </div>
@@ -427,8 +426,8 @@
                   <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
                     <i data-lucide="check" class="w-3.5 h-3.5"></i> Краснодар и край
                   </div>
-                  <button onclick="goToCatalogCategory('business')" class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
-                    Смотреть в каталоге <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  <button onclick="goToPortfolioCategory('business')" class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
+                    Смотреть в портфолио <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
               </div>
@@ -473,8 +472,8 @@
                   <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
                     <i data-lucide="check" class="w-3.5 h-3.5"></i> Монтаж по Краснодару
                   </div>
-                  <button onclick="goToCatalogCategory('wardrobe')" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
-                    Смотреть в каталоге <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  <button onclick="goToPortfolioCategory('wardrobe')" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
+                    Смотреть в портфолио <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
               </div>
@@ -519,8 +518,8 @@
                   <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
                     <i data-lucide="check" class="w-3.5 h-3.5"></i> Краснодар и край
                   </div>
-                  <button onclick="goToCatalogCategory('business')" class="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-500 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
-                    Смотреть в каталоге <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  <button onclick="goToPortfolioCategory('business')" class="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-500 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
+                    Смотреть в портфолио <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
               </div>
@@ -565,8 +564,8 @@
                   <div class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
                     <i data-lucide="check" class="w-3.5 h-3.5"></i> Монтаж по Краснодару
                   </div>
-                  <button onclick="goToCatalogCategory('living')" class="bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-500 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
-                    Смотреть в каталоге <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  <button onclick="goToPortfolioCategory('living')" class="bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-500 hover:to-amber-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-lg flex items-center gap-1.5 cursor-pointer">
+                    Смотреть в портфолио <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
               </div>
@@ -757,186 +756,7 @@
     </div>
   </section>
 
-  <!-- CATALOG OF SOLUTIONS (Strictly NO PRICES - Designs, Materials & Architecture) -->
-  <section id="catalog" class="py-16 px-4 sm:px-8 max-w-7xl mx-auto border-b border-white/10">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10">
-      <div>
-        <span class="text-xs uppercase tracking-wider text-brand-500 font-semibold flex items-center gap-1.5">
-          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Каталог направлений
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">
-          Каталог решений под ваши размеры
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-400 mt-1 max-w-2xl">
-          Все модели изготавливаются по индивидуальным габаритам. Точный расчет сметы зависит от выбранных материалов фасадов, фурнитуры и наполнения.
-        </p>
-      </div>
 
-      <!-- Catalog Category Filter Tabs -->
-      <div class="flex flex-wrap items-center gap-2">
-        <button onclick="filterCatalog('all')" class="cat-filter-btn active bg-brand-600 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">
-          Все категории
-        </button>
-        <button onclick="filterCatalog('kitchen')" class="cat-filter-btn bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold px-4 py-2 rounded-lg transition">
-          Кухни
-        </button>
-        <button onclick="filterCatalog('wardrobe')" class="cat-filter-btn bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold px-4 py-2 rounded-lg transition">
-          Шкафы
-        </button>
-        <button onclick="filterCatalog('living')" class="cat-filter-btn bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold px-4 py-2 rounded-lg transition">
-          Гостиные
-        </button>
-        <button onclick="filterCatalog('business')" class="cat-filter-btn bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold px-4 py-2 rounded-lg transition">
-          Для бизнеса
-        </button>
-      </div>
-    </div>
-
-    <!-- Catalog Grid (4 Solutions) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="catalog-grid">
-      
-      <!-- Catalog Item 1: Кухни -->
-      <div class="catalog-item kitchen bg-dark-800 border border-white/10 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition duration-300 shadow-xl flex flex-col">
-        <div class="relative h-56 overflow-hidden">
-          <img src="images/kitchen_hero_luxury.jpg" alt="Кухонные гарнитуры" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          <div class="absolute top-3 left-3 bg-dark-900/80 backdrop-blur-md px-2.5 py-1 rounded-md text-[11px] font-semibold text-white border border-white/10">
-            Кухонные гарнитуры
-          </div>
-          <div class="absolute bottom-3 left-3 right-3 bg-dark-950/90 backdrop-blur-md px-2.5 py-1.5 rounded-lg text-[11px] text-amber-300 font-medium border border-amber-500/20 flex items-center justify-between">
-            <span>Монтаж по Краснодару включен</span>
-            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-          </div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="font-bold text-base text-white mb-2">Кухни до потолка с антресолями</h3>
-            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-              Прямые, угловые и с островом. Влагостойкая лазерная кромка PUR, направляющие Blum с плавным закрыванием, скрытая LED-подсветка рабочей зоны.
-            </p>
-            <div class="text-[11px] text-slate-300 space-y-1 mb-5 bg-white/5 p-3 rounded-xl border border-white/5">
-              <div><strong class="text-white">Фасады:</strong> МДФ эмаль, шпон, пластик Fenix</div>
-              <div><strong class="text-white">Корпус:</strong> Влагостойкий ЛДСП Egger 18 мм</div>
-              <div><strong class="text-white">Срок:</strong> от 14 рабочих дней</div>
-            </div>
-          </div>
-          <div class="space-y-2">
-            <button onclick="goToPortfolioCategory('kitchen')" class="w-full py-2.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-amber-500/20 cursor-pointer">
-              <i data-lucide="gem" class="w-3.5 h-3.5"></i> Смотреть примеры в портфолио
-            </button>
-            <a href="https://max.ru" target="_blank" class="w-full py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-white/5">
-              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить в MAX
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Catalog Item 2: Шкафы -->
-      <div class="catalog-item wardrobe bg-dark-800 border border-white/10 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition duration-300 shadow-xl flex flex-col">
-        <div class="relative h-56 overflow-hidden">
-          <img src="images/wardrobe_bedroom.jpg" alt="Шкафы и гардеробы" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          <div class="absolute top-3 left-3 bg-dark-900/80 backdrop-blur-md px-2.5 py-1 rounded-md text-[11px] font-semibold text-white border border-white/10">
-            Шкафы и гардеробы
-          </div>
-          <div class="absolute bottom-3 left-3 right-3 bg-dark-950/90 backdrop-blur-md px-2.5 py-1.5 rounded-lg text-[11px] text-amber-300 font-medium border border-amber-500/20 flex items-center justify-between">
-            <span>Индивидуальный конструктив</span>
-            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-          </div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="font-bold text-base text-white mb-2">Встроенные гардеробные и купе</h3>
-            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-              Монтаж в ниши от пола до потолка без щелей. Бесшумные раздвижные и распашные системы, пантографы, корзины, интегрированные скрытые ручки.
-            </p>
-            <div class="text-[11px] text-slate-300 space-y-1 mb-5 bg-white/5 p-3 rounded-xl border border-white/5">
-              <div><strong class="text-white">Системы:</strong> Aristo Slim, Modus, Hettich</div>
-              <div><strong class="text-white">Наполнение:</strong> Ящики полного выдвижения</div>
-              <div><strong class="text-white">Срок:</strong> от 8 рабочих дней</div>
-            </div>
-          </div>
-          <div class="space-y-2">
-            <button onclick="goToPortfolioCategory('wardrobe')" class="w-full py-2.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-amber-500/20 cursor-pointer">
-              <i data-lucide="gem" class="w-3.5 h-3.5"></i> Смотреть примеры в портфолио
-            </button>
-            <a href="https://max.ru" target="_blank" class="w-full py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-white/5">
-              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить в MAX
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Catalog Item 3: Гостиные -->
-      <div class="catalog-item living bg-dark-800 border border-white/10 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition duration-300 shadow-xl flex flex-col">
-        <div class="relative h-56 overflow-hidden">
-          <img src="images/living_tv_floating.jpg" alt="Гостиные и ТВ-зоны" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          <div class="absolute top-3 left-3 bg-dark-900/80 backdrop-blur-md px-2.5 py-1 rounded-md text-[11px] font-semibold text-white border border-white/10">
-            Гостиные и ТВ
-          </div>
-          <div class="absolute bottom-3 left-3 right-3 bg-dark-950/90 backdrop-blur-md px-2.5 py-1.5 rounded-lg text-[11px] text-amber-300 font-medium border border-amber-500/20 flex items-center justify-between">
-            <span>Парящие подвесные тумбы</span>
-            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-          </div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="font-bold text-base text-white mb-2">Парящие ТВ-зоны и консоли</h3>
-            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-              Стеновые панели с декоративными рейками, подвесные тумбы со скрытыми мощными навесами Camar, кабель-каналы под ТВ без видимых проводов.
-            </p>
-            <div class="text-[11px] text-slate-300 space-y-1 mb-5 bg-white/5 p-3 rounded-xl border border-white/5">
-              <div><strong class="text-white">Материалы:</strong> AGT soft-touch, шпон дуба</div>
-              <div><strong class="text-white">Элементы:</strong> Теплая контурная подсветка</div>
-              <div><strong class="text-white">Срок:</strong> от 10 рабочих дней</div>
-            </div>
-          </div>
-          <div class="space-y-2">
-            <button onclick="goToPortfolioCategory('living')" class="w-full py-2.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-amber-500/20 cursor-pointer">
-              <i data-lucide="gem" class="w-3.5 h-3.5"></i> Смотреть примеры в портфолио
-            </button>
-            <a href="https://max.ru" target="_blank" class="w-full py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-white/5">
-              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить в MAX
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Catalog Item 4: Мебель для бизнеса -->
-      <div class="catalog-item business bg-dark-800 border border-white/10 rounded-2xl overflow-hidden group hover:border-brand-500/50 transition duration-300 shadow-xl flex flex-col">
-        <div class="relative h-56 overflow-hidden">
-          <img src="images/office_b2b.jpg" alt="Мебель для бизнеса" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          <div class="absolute top-3 left-3 bg-dark-900/80 backdrop-blur-md px-2.5 py-1 rounded-md text-[11px] font-semibold text-white border border-white/10">
-            Мебель для бизнеса
-          </div>
-          <div class="absolute bottom-3 left-3 right-3 bg-dark-950/90 backdrop-blur-md px-2.5 py-1.5 rounded-lg text-[11px] text-amber-300 font-medium border border-amber-500/20 flex items-center justify-between">
-            <span>Ресепшн, офисы, HoReCa</span>
-            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-          </div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="font-bold text-base text-white mb-2">Коммерческие пространства</h3>
-            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-              Стойки администратора, барные зоны, офисные шкафы для документации, витринные стеллажи для бутиков и салонов красоты по Краснодару и краю.
-            </p>
-            <div class="text-[11px] text-slate-300 space-y-1 mb-5 bg-white/5 p-3 rounded-xl border border-white/5">
-              <div><strong class="text-white">Поверхности:</strong> Искусственный камень, HPL</div>
-              <div><strong class="text-white">Износостойкость:</strong> Усиленный коммерческий крепеж</div>
-              <div><strong class="text-white">Срок:</strong> от 12 рабочих дней</div>
-            </div>
-          </div>
-          <div class="space-y-2">
-            <button onclick="goToPortfolioCategory('business')" class="w-full py-2.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-amber-500/20 cursor-pointer">
-              <i data-lucide="gem" class="w-3.5 h-3.5"></i> Смотреть примеры в портфолио
-            </button>
-            <a href="https://max.ru" target="_blank" class="w-full py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-white/5">
-              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить в MAX
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- PORTFOLIO / REAL COMPLETED PROJECTS (Multi-photo galleries, strictly NO PRICES) -->
   <section id="portfolio" class="py-16 px-4 sm:px-8 max-w-7xl mx-auto">
@@ -991,7 +811,7 @@
             <i data-lucide="images" class="w-3 h-3"></i> 4 фото
           </div>
           <div class="card-admin-delete hidden absolute top-12 right-3 z-20" onclick="event.stopPropagation()">
-            <button type="button" onclick="deleteCustomProject(this, 'Кухня в стиле Soft-Loft')" title="Удалить фото из каталога" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
+            <button type="button" onclick="deleteCustomProject(this, 'Кухня в стиле Soft-Loft')" title="Удалить фото из портфолио" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
               <i data-lucide="trash-2" class="w-3 h-3"></i>
               <span>Удалить</span>
             </button>
@@ -1019,14 +839,9 @@
             <button onclick="openProjectGalleryModal('softLoftKitchen')" class="w-full py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-dark-950 font-bold text-xs transition flex items-center justify-center gap-1.5 shadow cursor-pointer">
               <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Открыть фотогалерею объекта (4 фото)
             </button>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="goToCatalogCategory('kitchen')" class="py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-white/5 cursor-pointer">
-                <i data-lucide="layout-grid" class="w-3 h-3"></i> В каталог решений
-              </button>
-              <a href="https://max.ru" target="_blank" class="py-2 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-blue-500/30">
-                <i data-lucide="message-square" class="w-3 h-3"></i> Обсудить в MAX
-              </a>
-            </div>
+            <a href="https://max.ru" target="_blank" class="w-full py-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-blue-500/30">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить проект в MAX
+            </a>
           </div>
         </div>
       </div>
@@ -1043,7 +858,7 @@
             <i data-lucide="images" class="w-3 h-3"></i> 3 фото
           </div>
           <div class="card-admin-delete hidden absolute top-12 right-3 z-20" onclick="event.stopPropagation()">
-            <button type="button" onclick="deleteCustomProject(this, 'Встроенный шкаф в спальню')" title="Удалить фото из каталога" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
+            <button type="button" onclick="deleteCustomProject(this, 'Встроенный шкаф в спальню')" title="Удалить фото из портфолио" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
               <i data-lucide="trash-2" class="w-3 h-3"></i>
               <span>Удалить</span>
             </button>
@@ -1071,14 +886,9 @@
             <button onclick="openProjectGalleryModal('wardrobeBedroom')" class="w-full py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-dark-950 font-bold text-xs transition flex items-center justify-center gap-1.5 shadow cursor-pointer">
               <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Открыть фотогалерею объекта (3 фото)
             </button>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="goToCatalogCategory('wardrobe')" class="py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-white/5 cursor-pointer">
-                <i data-lucide="layout-grid" class="w-3 h-3"></i> В каталог решений
-              </button>
-              <a href="https://max.ru" target="_blank" class="py-2 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-blue-500/30">
-                <i data-lucide="message-square" class="w-3 h-3"></i> Обсудить в MAX
-              </a>
-            </div>
+            <a href="https://max.ru" target="_blank" class="w-full py-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-blue-500/30">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить проект в MAX
+            </a>
           </div>
         </div>
       </div>
@@ -1095,7 +905,7 @@
             <i data-lucide="images" class="w-3 h-3"></i> 2 фото
           </div>
           <div class="card-admin-delete hidden absolute top-12 right-3 z-20" onclick="event.stopPropagation()">
-            <button type="button" onclick="deleteCustomProject(this, 'Парящая ТВ-зона с рейками')" title="Удалить фото из каталога" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
+            <button type="button" onclick="deleteCustomProject(this, 'Парящая ТВ-зона с рейками')" title="Удалить фото из портфолио" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
               <i data-lucide="trash-2" class="w-3 h-3"></i>
               <span>Удалить</span>
             </button>
@@ -1123,14 +933,9 @@
             <button onclick="openProjectGalleryModal('livingTv')" class="w-full py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-dark-950 font-bold text-xs transition flex items-center justify-center gap-1.5 shadow cursor-pointer">
               <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Открыть фотогалерею объекта (2 фото)
             </button>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="goToCatalogCategory('living')" class="py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-white/5 cursor-pointer">
-                <i data-lucide="layout-grid" class="w-3 h-3"></i> В каталог решений
-              </button>
-              <a href="https://max.ru" target="_blank" class="py-2 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-blue-500/30">
-                <i data-lucide="message-square" class="w-3 h-3"></i> Обсудить в MAX
-              </a>
-            </div>
+            <a href="https://max.ru" target="_blank" class="w-full py-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-blue-500/30">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить проект в MAX
+            </a>
           </div>
         </div>
       </div>
@@ -1147,7 +952,7 @@
             <i data-lucide="images" class="w-3 h-3"></i> 2 фото
           </div>
           <div class="card-admin-delete hidden absolute top-12 right-3 z-20" onclick="event.stopPropagation()">
-            <button type="button" onclick="deleteCustomProject(this, 'Стойка ресепшн в бизнес-центр')" title="Удалить фото из каталога" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
+            <button type="button" onclick="deleteCustomProject(this, 'Стойка ресепшн в бизнес-центр')" title="Удалить фото из портфолио" class="bg-red-600/90 hover:bg-red-500 text-white px-2 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
               <i data-lucide="trash-2" class="w-3 h-3"></i>
               <span>Удалить</span>
             </button>
@@ -1175,14 +980,9 @@
             <button onclick="openProjectGalleryModal('officeB2b')" class="w-full py-2.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-dark-950 font-bold text-xs transition flex items-center justify-center gap-1.5 shadow cursor-pointer">
               <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i> Открыть фотогалерею объекта (2 фото)
             </button>
-            <div class="grid grid-cols-2 gap-2">
-              <button onclick="goToCatalogCategory('business')" class="py-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-white/5 cursor-pointer">
-                <i data-lucide="layout-grid" class="w-3 h-3"></i> В каталог решений
-              </button>
-              <a href="https://max.ru" target="_blank" class="py-2 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 text-[11px] font-semibold transition flex items-center justify-center gap-1 border border-blue-500/30">
-                <i data-lucide="message-square" class="w-3 h-3"></i> Обсудить в MAX
-              </a>
-            </div>
+            <a href="https://max.ru" target="_blank" class="w-full py-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-blue-500/30">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить проект в MAX
+            </a>
           </div>
         </div>
       </div>
@@ -1197,12 +997,12 @@
       <div class="bg-dark-950 border-2 border-emerald-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
         <div class="mb-6">
           <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
-            Загрузка фото в каталог "1 клик"
+            Загрузка фото в портфолио в "1 клик"
           </h2>
           <div class="flex flex-wrap items-center gap-3 sm:gap-6 text-xs text-slate-300 mt-2.5">
             <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Пакетная загрузка до 50 фото</span>
             <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> С телефона или компьютера</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Моментальная публикация в каталог</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Моментальная публикация в портфолио</span>
           </div>
         </div>
 
@@ -1269,11 +1069,11 @@
             <div id="upload-success-badge" class="hidden mt-3 text-xs text-emerald-300 font-semibold flex flex-wrap items-center justify-between gap-2 border-t border-emerald-500/20 pt-2.5">
               <div class="flex items-center gap-1.5">
                 <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
-                <span id="upload-success-msg">Фотографии успешно сжаты в WebP и добавлены в каталог!</span>
+                <span id="upload-success-msg">Фотографии успешно сжаты в WebP и добавлены в портфолио!</span>
               </div>
               <div class="flex items-center gap-2">
                 <button type="button" onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })" class="px-3 py-1 bg-emerald-500 text-dark-950 font-bold rounded-md hover:bg-emerald-400 transition text-[11px] flex items-center gap-1 shadow cursor-pointer">
-                  Посмотреть в каталоге <i data-lucide="arrow-down" class="w-3 h-3"></i>
+                  Посмотреть в портфолио <i data-lucide="arrow-down" class="w-3 h-3"></i>
                 </button>
                 <button type="button" onclick="clearUploadedProjects()" class="px-2.5 py-1 bg-red-500/20 hover:bg-red-500 hover:text-white text-red-300 rounded-md transition text-[11px] flex items-center gap-1 border border-red-500/30 cursor-pointer" title="Удалить все добавленные фото">
                   <i data-lucide="trash-2" class="w-3 h-3"></i> Очистить добавленные
@@ -1752,11 +1552,10 @@
       </div>
 
       <div class="flex flex-wrap items-center justify-center gap-6">
-        <a href="#catalog" class="hover:text-white transition">Каталог</a>
-        <a href="#portfolio" class="hover:text-amber-400 transition">Портфолио</a>
+        <a href="#portfolio" class="hover:text-amber-400 font-semibold transition">Портфолио работ</a>
         <a href="#production" class="hover:text-white transition">Производство</a>
         <a href="#reviews" class="hover:text-white transition">Отзывы</a>
-        <a href="#contacts" class="hover:text-white transition">Контакты</a>
+        <a href="#contacts" class="hover:text-white transition">Контакты и цех</a>
         <a href="https://max.ru" target="_blank" class="text-blue-400 hover:text-blue-300 font-bold transition">Мессенджер MAX</a>
       </div>
 
@@ -1934,9 +1733,9 @@
             <i data-lucide="message-square" class="w-4 h-4"></i>
             <span>Обсудить в MAX</span>
           </a>
-          <button type="button" onclick="jumpToCatalogFromModal()" class="flex-1 sm:flex-initial bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white font-semibold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-1.5 text-xs border border-white/10 cursor-pointer">
-            <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
-            <span>В каталог решений</span>
+          <button type="button" onclick="closeProjectGalleryModal()" class="flex-1 sm:flex-initial bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white font-semibold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-1.5 text-xs border border-white/10 cursor-pointer">
+            <i data-lucide="x" class="w-3.5 h-3.5"></i>
+            <span>Закрыть</span>
           </button>
         </div>
       </div>
@@ -2217,52 +2016,7 @@
       }
     }
 
-    function jumpToCatalogFromModal() {
-      const data = projectGalleries[activeGalleryId];
-      closeProjectGalleryModal();
-      if (data && data.category) {
-        goToCatalogCategory(data.category);
-      } else {
-        const catEl = document.getElementById('catalog');
-        if (catEl) catEl.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
 
-    // CATALOG FILTER & QUICK JUMP
-    function filterCatalog(cat) {
-      document.querySelectorAll('.cat-filter-btn').forEach(btn => {
-        btn.classList.remove('active', 'bg-brand-600', 'text-white');
-        btn.classList.add('bg-white/5', 'text-slate-300');
-      });
-      if (window.event && window.event.target) {
-        const targetBtn = window.event.target.closest('.cat-filter-btn') || window.event.target;
-        targetBtn.classList.add('active', 'bg-brand-600', 'text-white');
-        targetBtn.classList.remove('bg-white/5', 'text-slate-300');
-      }
-
-      const items = document.querySelectorAll('.catalog-item');
-      items.forEach(item => {
-        if (cat === 'all' || item.classList.contains(cat)) {
-          item.style.display = 'flex';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-
-    function goToCatalogCategory(cat) {
-      const buttons = document.querySelectorAll('.cat-filter-btn');
-      buttons.forEach(btn => {
-        const onclickAttr = btn.getAttribute('onclick') || '';
-        if (onclickAttr.includes(`'${cat}'`)) {
-          btn.click();
-        }
-      });
-      const catalogEl = document.getElementById('catalog');
-      if (catalogEl) {
-        catalogEl.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
 
     function goToPortfolioCategory(cat) {
       const buttons = document.querySelectorAll('.port-filter-btn');
@@ -2462,7 +2216,7 @@
           addProjectToCatalog(imageSrc, category, fileName);
 
           showTelegramPushToast(
-            '📸 Новое фото в каталоге!',
+            '📸 Новое фото в портфолио!',
             `Категория: ${category} • WebP сжатие завершено • Уже на сайте`
           );
         }
@@ -2481,11 +2235,10 @@
       };
       const catClass = catClasses[category] || 'kitchen';
       const cleanTitle = (title && !title.includes('.')) ? title : `${category} — Проект под заказ`;
-      const priceText = category === 'Шкафы' ? 'от 75 000 ₽' : (category === 'Гостиные' ? 'от 85 000 ₽' : 'от 165 000 ₽');
 
       const cardHtml = `
       <div class="portfolio-item custom-uploaded ${catClass} bg-dark-800 border-2 border-emerald-500/80 rounded-2xl overflow-hidden group hover:border-emerald-400 transition duration-300 shadow-2xl flex flex-col ring-2 ring-emerald-500/30 relative">
-        <div class="relative h-60 overflow-hidden cursor-pointer" onclick="openProjectModal('${cleanTitle}', '${priceText}', 'Новый проект, загруженный через 1 клик', 'от 10 дней', '${imgSrc}')">
+        <div class="relative h-60 overflow-hidden cursor-pointer" onclick="openModal('Обсудить проект: ${cleanTitle}')">
           <img src="${imgSrc}" alt="${cleanTitle}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
           <div class="absolute top-3 left-3 bg-emerald-600/90 backdrop-blur-md px-2.5 py-1 rounded-md text-[11px] font-bold text-white border border-emerald-400/40 flex items-center gap-1 shadow">
             <i data-lucide="sparkles" class="w-3 h-3"></i> Только что добавлено
@@ -2494,13 +2247,15 @@
             <span class="bg-dark-900/80 backdrop-blur-md px-2 py-1 rounded text-[10px] font-semibold text-emerald-300 border border-white/10">
               WebP 85 KB
             </span>
-            <button type="button" onclick="deleteCustomProject(this, '${cleanTitle}')" title="Удалить фото из каталога" class="bg-red-600 hover:bg-red-500 text-white px-2.5 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
+            <button type="button" onclick="deleteCustomProject(this, '${cleanTitle}')" title="Удалить фото из портфолио" class="bg-red-600 hover:bg-red-500 text-white px-2.5 py-1 rounded-md text-xs font-bold shadow-lg transition flex items-center gap-1 cursor-pointer border border-red-400/40">
               <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
               <span>Удалить</span>
             </button>
           </div>
-          <div class="absolute bottom-3 right-3 bg-emerald-500 px-3 py-1 rounded-md text-xs font-bold text-dark-950 shadow-lg">
-            ${priceText}
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+            <span class="bg-emerald-500/90 backdrop-blur-md text-dark-950 px-2.5 py-1 rounded-md text-[11px] font-extrabold shadow flex items-center gap-1">
+              <i data-lucide="check" class="w-3 h-3"></i> Монтаж по Краснодару включен
+            </span>
           </div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -2516,9 +2271,11 @@
               <div><strong class="text-slate-300">Срок:</strong> от 10 рабочих дней</div>
             </div>
           </div>
-          <button onclick="openModal('Расчет стоимости: ${cleanTitle}')" class="w-full py-2.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500 hover:text-dark-950 text-xs font-bold text-emerald-300 transition flex items-center justify-center gap-1.5 border border-emerald-500/30">
-            Рассчитать похожий проект <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </button>
+          <div class="space-y-2">
+            <a href="https://max.ru" target="_blank" class="w-full py-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 text-xs font-semibold transition flex items-center justify-center gap-1.5 border border-blue-500/30">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-blue-400"></i> Обсудить проект в MAX
+            </a>
+          </div>
         </div>
       </div>
       `;
@@ -2527,9 +2284,9 @@
       lucide.createIcons();
     }
 
-    // DELETE PROJECT & ADMIN CATALOG MANAGEMENT
+    // DELETE PROJECT & ADMIN PORTFOLIO MANAGEMENT
     function deleteCustomProject(btn, title) {
-      if (!confirm(`Удалить проект «${title}» из каталога?`)) return;
+      if (!confirm(`Удалить проект «${title}» из портфолио?`)) return;
       const card = btn.closest('.portfolio-item');
       if (card) {
         card.style.transition = 'all 0.35s ease';
@@ -2537,7 +2294,7 @@
         card.style.transform = 'scale(0.85)';
         setTimeout(() => {
           card.remove();
-          showTelegramPushToast('🗑️ Проект удален', `«${title}» успешно удален из каталога`);
+          showTelegramPushToast('🗑️ Проект удален', `«${title}» успешно удален из портфолио`);
         }, 350);
       }
     }
@@ -2545,12 +2302,12 @@
     function clearUploadedProjects() {
       const customCards = document.querySelectorAll('.portfolio-item.custom-uploaded');
       if (customCards.length === 0) {
-        alert('В каталоге нет добавленных тестовых фотографий.');
+        alert('В портфолио нет добавленных тестовых фотографий.');
         return;
       }
-      if (confirm(`Удалить все добавленные фото (${customCards.length} шт.) из каталога?`)) {
+      if (confirm(`Удалить все добавленные фото (${customCards.length} шт.) из портфолио?`)) {
         customCards.forEach(card => card.remove());
-        showTelegramPushToast('🗑️ Каталог очищен', 'Все добавленные фото удалены');
+        showTelegramPushToast('🗑️ Портфолио очищено', 'Все добавленные фото удалены');
       }
     }
 

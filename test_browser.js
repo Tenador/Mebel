@@ -147,29 +147,29 @@ async function run() {
   `);
   console.log(`4. Интерактивный 3D CAD сплит-слайдер:`, sliderCheck);
 
-  // Test 5: Manifest & Catalog Section (Without Prices)
-  const catalogCheck = await evaluate(`
+  // Test 5: Manifest & Portfolio Section (Without Prices)
+  const portfolioCheck = await evaluate(`
     (() => {
       const manifestTitle = document.querySelector('#manifest h2')?.innerText;
-      const catalogEl = document.getElementById('catalog');
-      const catalogCards = document.querySelectorAll('.catalog-item');
+      const portfolioEl = document.getElementById('portfolio');
+      const portfolioCards = document.querySelectorAll('.portfolio-item');
       
       // Filter test
-      filterCatalog('kitchen');
-      const visibleAfterKitchen = Array.from(document.querySelectorAll('.catalog-item')).filter(i => i.style.display !== 'none').length;
-      filterCatalog('all');
-      const visibleAll = Array.from(document.querySelectorAll('.catalog-item')).filter(i => i.style.display !== 'none').length;
+      filterPortfolio('kitchen');
+      const visibleAfterKitchen = Array.from(document.querySelectorAll('.portfolio-item')).filter(i => i.style.display !== 'none').length;
+      filterPortfolio('all');
+      const visibleAll = Array.from(document.querySelectorAll('.portfolio-item')).filter(i => i.style.display !== 'none').length;
 
       return {
         manifestTitle: manifestTitle ? manifestTitle.substring(0, 50) + '...' : null,
-        catalogPresent: !!catalogEl,
-        totalCatalogCards: catalogCards.length,
+        portfolioPresent: !!portfolioEl,
+        totalPortfolioCards: portfolioCards.length,
         filterKitchenCount: visibleAfterKitchen,
         filterAllCount: visibleAll
       };
     })()
   `);
-  console.log(`5. Манифест мастера и Каталог решений (без цен):`, catalogCheck);
+  console.log(`5. Манифест мастера и Портфолио выполненных работ:`, portfolioCheck);
 
   // Test 6: Multi-photo Gallery Modal for Portfolio
   const galleryCheck = await evaluate(`
